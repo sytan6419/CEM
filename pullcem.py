@@ -57,8 +57,8 @@ def pullcmrc():
                 browser.get('http://cpp.cisco.com/CMRC/rpEditorMan.aspx?ReportName=cmrcUUT_History') # change your path at here
                 assert 'cmrcLogin' in browser.title
                 browser.find_element_by_name('tbxUserID').clear()
-                browser.find_element_by_name('tbxUserID').send_keys('sytan')
-                browser.find_element_by_name('txtPassword').send_keys('@Flex1234') 
+                browser.find_element_by_name('tbxUserID').send_keys('') #put your own username
+                browser.find_element_by_name('txtPassword').send_keys('') #put your own password 
                 browser.find_element_by_name('BtnLogin').click()
                         
                 assert 'rpEditorMan' in browser.title
